@@ -1808,7 +1808,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #deffff;
+  background: #bf0014;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2883,14 +2883,6 @@ pre .javascript .function {
 }
 .feed-link a:hover i {
   color: #e34603;
-}
-.links-of-author:before,
-.links-of-author:after {
-  content: " ";
-  display: table;
-}
-.links-of-author:after {
-  clear: both;
 }
 .links-of-author-item {
   margin: 5px 0 0;

@@ -94,13 +94,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Shell 介绍 Shell：壳（区别于：核） 普通意义上的shell就是可以接受用户输入命令的程序。它之所以被称作shell是因为它隐藏了操作系统低层的细节。 Bourne-Again shell（bash）：应用非常广泛的一种shell工具，是一个命令处理器，bash也是大多数Linux系统默认的Shell。   常用 shell 命令12345678910111213141516171819">
+<meta property="og:type" content="article">
+<meta property="og:title" content="article title">
+<meta property="og:url" content="http://yoursite.com/2017/08/10/article-title/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Shell 介绍 Shell：壳（区别于：核） 普通意义上的shell就是可以接受用户输入命令的程序。它之所以被称作shell是因为它隐藏了操作系统低层的细节。 Bourne-Again shell（bash）：应用非常广泛的一种shell工具，是一个命令处理器，bash也是大多数Linux系统默认的Shell。   常用 shell 命令12345678910111213141516171819">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2017/08/10/article-title/day-01/1-%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99/git-info/shell.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/10/article-title/day-01/1-%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99/git-info/vi3model.png">
+<meta property="og:updated_time" content="2017-08-10T07:31:33.240Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="article title">
+<meta name="twitter:description" content="Shell 介绍 Shell：壳（区别于：核） 普通意义上的shell就是可以接受用户输入命令的程序。它之所以被称作shell是因为它隐藏了操作系统低层的细节。 Bourne-Again shell（bash）：应用非常广泛的一种shell工具，是一个命令处理器，bash也是大多数Linux系统默认的Shell。   常用 shell 命令12345678910111213141516171819">
+<meta name="twitter:image" content="http://yoursite.com/2017/08/10/article-title/day-01/1-%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99/git-info/shell.png">
 
 
 
@@ -129,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/10/article-title/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>article title | Hexo</title>
   
 
 
@@ -154,9 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,9 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/10/article-title/" itemprop="url">article title</a></h1>
+          <h1 class="post-title" itemprop="name headline">article title</h1>
         
 
         <div class="post-meta">
@@ -323,9 +326,7 @@
       
 
       
-        
-          
-            <h1 id="Shell-介绍"><a href="#Shell-介绍" class="headerlink" title="Shell 介绍"></a>Shell 介绍</h1><ul>
+        <h1 id="Shell-介绍"><a href="#Shell-介绍" class="headerlink" title="Shell 介绍"></a>Shell 介绍</h1><ul>
 <li>Shell：壳（区别于：核）</li>
 <li>普通意义上的shell就是可以接受用户输入命令的程序。它之所以被称作shell是因为它隐藏了操作系统低层的细节。</li>
 <li>Bourne-Again shell（bash）：应用非常广泛的一种shell工具，是一个命令处理器，bash也是大多数Linux系统默认的Shell。</li>
@@ -348,8 +349,6 @@
 <h2 id="底行模式"><a href="#底行模式" class="headerlink" title="底行模式"></a>底行模式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 使用 vi</span></div><div class="line">vi 文件路径</div><div class="line"></div><div class="line"><span class="comment"># 保存</span></div><div class="line">:w </div><div class="line"><span class="comment"># :w filenme #另存为</span></div><div class="line"></div><div class="line"><span class="comment"># 退出</span></div><div class="line">:q</div><div class="line"></div><div class="line"><span class="comment"># 保存并退出</span></div><div class="line">:wq</div><div class="line"></div><div class="line"><span class="comment"># 撤销更改，返回到上一次保存的状态</span></div><div class="line">:e!</div><div class="line"></div><div class="line"><span class="comment"># 不保存强制退出</span></div><div class="line">:q!</div><div class="line"></div><div class="line"><span class="comment"># 展示行号</span></div><div class="line">:<span class="built_in">set</span> nu</div></pre></td></tr></table></figure>
 <h2 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 保存并退出，大写</span></div><div class="line">ZZ</div><div class="line"></div><div class="line"><span class="comment"># 辙销操作，可多次使用</span></div><div class="line">u</div><div class="line"></div><div class="line"><span class="comment"># 删除当前行</span></div><div class="line">dd</div><div class="line"></div><div class="line"><span class="comment"># 复制当前行</span></div><div class="line">yy</div><div class="line"></div><div class="line"><span class="comment"># 粘贴内容</span></div><div class="line">p</div><div class="line"></div><div class="line"><span class="comment"># 向前翻页</span></div><div class="line">ctrl+b</div><div class="line"></div><div class="line"><span class="comment"># 向后翻页</span></div><div class="line">ctrl+f</div><div class="line"></div><div class="line"><span class="comment"># 进入编辑模式，</span></div><div class="line">i <span class="comment">#当前光标处插入</span></div><div class="line">a <span class="comment">#当前光标后插入</span></div><div class="line">A <span class="comment">#光标移动到行尾</span></div><div class="line">o <span class="comment">#当前行下面插入新行</span></div><div class="line">O <span class="comment">#当前行上面插入新行</span></div></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -366,230 +365,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/10/文章标题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/myself.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/10/文章标题/" itemprop="url">文章标题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-10T02:44:31+08:00">
-                2017-08-10
-              </time>
+              <a href="/2017/08/10/文章标题/" rel="next" title="文章标题">
+                <i class="fa fa-chevron-left"></i> 文章标题
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="Git-版本控制工具"><a href="#Git-版本控制工具" class="headerlink" title="Git -版本控制工具"></a>Git -版本控制工具</h1><h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><ul>
-<li><a href="https://git-scm.com" target="_blank" rel="external">官网</a></li>
-<li><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">文档</a></li>
-</ul>
-<h3 id="什么是Git"><a href="#什么是Git" class="headerlink" title="什么是Git"></a>什么是Git</h3><ul>
-<li>Git是一款免费、开源的分布式 <code>版本控制软件</code> VCS - Version Control System</li>
-<li>由 Linus Torvalds（林纳斯·托瓦兹）于2005年发布。</li>
-<li>最初目的是为更好地管理 Linux内核 开发而设计</li>
-<li>Git使用方式：1 命令 、2 图形化界面（GUI）</li>
-</ul>
-<h3 id="Git的优势"><a href="#Git的优势" class="headerlink" title="Git的优势"></a>Git的优势</h3><ul>
-<li>Git的速度快，性能好</li>
-<li>有效、高速的处理从很小到非常大的项目版本管理</li>
-<li>采用分布式存储方式，不需要服务器就可以运行</li>
-<li>使得源代码的发布和交流极其方便</li>
-</ul>
-<h2 id="两种版本控制工具"><a href="#两种版本控制工具" class="headerlink" title="两种版本控制工具"></a>两种版本控制工具</h2><ul>
-<li>集中式版本控制工具: SVN</li>
-<li>分布式版本控制工具: Git</li>
-</ul>
-<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">版本控制是一种记录一个或若干文件内容变化，以便将来查阅特</div><div class="line">定版本修订情况的系统。</div></pre></td></tr></table></figure>
-<h3 id="集中式和分布式的区别"><a href="#集中式和分布式的区别" class="headerlink" title="集中式和分布式的区别"></a>集中式和分布式的区别</h3><ul>
-<li>1 集中式依赖于远程服务器，在没有网络的情况下无法提交</li>
-<li>2 所有开发者都共享一个远程服务器</li>
-<li>3 分布式直接进行本地存储，不依赖与远程服务器（可有可无）</li>
-<li>4 没有网络的情况下，也可以工作，有网了，将本地修改内容全部提交到远程服务器</li>
-</ul>
-<h2 id="Git的安装"><a href="#Git的安装" class="headerlink" title="Git的安装"></a>Git的安装</h2><h2 id="Git的基本使用"><a href="#Git的基本使用" class="headerlink" title="Git的基本使用"></a>Git的基本使用</h2><ul>
-<li>查看帮助：<code>git --help</code></li>
-<li>查看某一命令帮助：<code>git add -h</code></li>
-</ul>
-<h3 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h3><ul>
-<li>需要配置：user.name 和 user.email</li>
-<li>作用：每次 Git 提交时都会引用这两条信息，记录是谁提交了更新</li>
-<li>配置用户名：   <code>git config --global user.name &quot;用户名&quot;</code></li>
-<li>配置邮箱：     <code>git config --global user.email &quot;邮箱地址&quot;</code></li>
-<li>查看配置信息： <code>git config --list</code></li>
-<li>使用 <code>--global</code> 实现全局配置，任何位置使用git都有效</li>
-</ul>
-<h3 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h3><ul>
-<li>命令：<code>git init</code></li>
-<li>作用：使用Git管理项目的初始化操作，会创建一个名为<code>.git</code>的隐藏目录</li>
-<li>一般是在项目的根目录执行这个命令</li>
-<li><code>.git</code>目录:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">它是 Git 用来保存元数据和对象数据库的地方。</div><div class="line">该目录非常重要，每次克隆镜像仓库的时候，实际拷贝的就是这个目录里面的数据。</div></pre></td></tr></table></figure>
-<h3 id="跟踪文件"><a href="#跟踪文件" class="headerlink" title="跟踪文件"></a>跟踪文件</h3><ul>
-<li>作用：将文件由 工作区 添加到 暂存区（Index），暂存文件</li>
-<li>命令：<code>git add 文件路径</code><ul>
-<li>例如： <code>git add ./README.md</code></li>
-</ul>
-</li>
-<li><code>git add --all</code> 或者 <code>git add -A</code>（简写） 添加所有文件</li>
-<li><code>git add a.txt b.txt</code> 同时添加两个文件</li>
-<li><code>git add *.js</code> 添加当前目录下的所有js文件</li>
-</ul>
-<h3 id="提交更新"><a href="#提交更新" class="headerlink" title="提交更新"></a>提交更新</h3><ul>
-<li>作用：将文件由 暂存区 添加到 仓库（HEAD）</li>
-<li><code>git commit -m &quot;提交说明&quot;</code></li>
-</ul>
-<h3 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h3><ul>
-<li>命令：<code>git status</code></li>
-<li>命令：<code>git stauts -s</code> 简化日志输出格式</li>
-</ul>
-<h3 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h3><ul>
-<li>三个存储分区的说明：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1 工作区：开发者的工作目录</div><div class="line">2 暂存区：临时存放工作目录中变更的文件</div><div class="line">3 仓库  ：存储提交之后的文件目录</div></pre></td></tr></table></figure>
-<ul>
-<li>文件的三种状态：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">已修改（modified）=&gt; 已暂存（staged）=&gt; 已提交（committed）</div><div class="line"></div><div class="line">已修改表示修改了某个文件，但还没有提交保存</div><div class="line">已暂存表示把已修改的文件放在下次提交时要保存的清单中</div><div class="line">已提交表示该文件已经被安全地保存在本地git仓库中了</div></pre></td></tr></table></figure>
-<h3 id="Git工作流程"><a href="#Git工作流程" class="headerlink" title="Git工作流程"></a>Git工作流程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1 在工作目录中修改某些文件。</div><div class="line">2 对修改后的文件进行快照，然后保存到暂存区域。</div><div class="line">3 提交更新，将保存在暂存区域的文件快照永久转储到.git目录中。</div></pre></td></tr></table></figure>
-<h3 id="查看提交日志"><a href="#查看提交日志" class="headerlink" title="查看提交日志"></a>查看提交日志</h3><ul>
-<li>命令：<code>git log</code> 查看详细的提交信息</li>
-<li>命令：<code>git log --oneline</code> 简洁的日志信息</li>
-<li>命令：<code>git reflog</code> 查看所有提交变更操作</li>
-</ul>
-<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><ul>
-<li>作用：恢复到已经提交的某一个版本中</li>
-<li>命令：<code>git reset --hard [版本号]</code><ul>
-<li>作用：回退到指定的版本号</li>
-</ul>
-</li>
-<li>其他方式：<code>git reset --hard head~1</code><ul>
-<li>~1 表示回到上一次提交</li>
-<li>~2 表示上上一次提交</li>
-<li>~0 表示当前提交</li>
-</ul>
-</li>
-</ul>
-<h3 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h3><ul>
-<li>作用：忽略一些不需要被git管理的文件</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1 在与 .git 隐藏目录同级的目录中创建 `.gitignore` 文件</div><div class="line">2 打开 .gitignore 文件，加入忽略文件，例如：/test.html</div><div class="line">3 路径是相对于当前 .gitignore文件 的路径</div><div class="line"></div><div class="line">路径写法：</div><div class="line">/css/a.css</div><div class="line">/css/*.css</div><div class="line">/a.html</div><div class="line"></div><div class="line">#忽略 build/ 目录下的所有文件</div><div class="line">build/</div></pre></td></tr></table></figure>
-<h4 id="忽略文件的说明"><a href="#忽略文件的说明" class="headerlink" title="忽略文件的说明"></a>忽略文件的说明</h4><ul>
-<li>1 使用 <code>#</code> 表示注释，例如：<code># 这是注释内容</code></li>
-<li>2 使用 <code>*</code> 表示通配符，匹配所有文件，例如：<code>/css/*.css</code></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -599,138 +396,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/09/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/myself.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/09/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-09T23:32:52+08:00">
-                2017-08-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -738,6 +408,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -758,8 +432,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/myself.jpg"
@@ -803,6 +486,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Shell-介绍"><span class="nav-number">1.</span> <span class="nav-text">Shell 介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用-shell-命令"><span class="nav-number">1.1.</span> <span class="nav-text">常用 shell 命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vi编辑器"><span class="nav-number">2.</span> <span class="nav-text">vi编辑器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3种模式"><span class="nav-number">2.1.</span> <span class="nav-text">3种模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入模式"><span class="nav-number">2.2.</span> <span class="nav-text">插入模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#底行模式"><span class="nav-number">2.3.</span> <span class="nav-text">底行模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令模式"><span class="nav-number">2.4.</span> <span class="nav-text">命令模式</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -929,10 +628,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
