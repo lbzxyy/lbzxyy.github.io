@@ -478,8 +478,7 @@
 
       
         
-          
-            <h1 id="Git-版本控制工具"><a href="#Git-版本控制工具" class="headerlink" title="Git -版本控制工具"></a>Git -版本控制工具</h1><h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><ul>
+          <h1 id="Git-版本控制工具"><a href="#Git-版本控制工具" class="headerlink" title="Git -版本控制工具"></a>Git -版本控制工具</h1><h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><ul>
 <li><a href="https://git-scm.com" target="_blank" rel="external">官网</a></li>
 <li><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">文档</a></li>
 </ul>
@@ -516,70 +515,14 @@
 <li>配置用户名：   <code>git config --global user.name &quot;用户名&quot;</code></li>
 <li>配置邮箱：     <code>git config --global user.email &quot;邮箱地址&quot;</code></li>
 <li>查看配置信息： <code>git config --list</code></li>
-<li>使用 <code>--global</code> 实现全局配置，任何位置使用git都有效</li>
-</ul>
-<h3 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h3><ul>
-<li>命令：<code>git init</code></li>
-<li>作用：使用Git管理项目的初始化操作，会创建一个名为<code>.git</code>的隐藏目录</li>
-<li>一般是在项目的根目录执行这个命令</li>
-<li><code>.git</code>目录:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">它是 Git 用来保存元数据和对象数据库的地方。</div><div class="line">该目录非常重要，每次克隆镜像仓库的时候，实际拷贝的就是这个目录里面的数据。</div></pre></td></tr></table></figure>
-<h3 id="跟踪文件"><a href="#跟踪文件" class="headerlink" title="跟踪文件"></a>跟踪文件</h3><ul>
-<li>作用：将文件由 工作区 添加到 暂存区（Index），暂存文件</li>
-<li>命令：<code>git add 文件路径</code><ul>
-<li>例如： <code>git add ./README.md</code></li>
-</ul>
-</li>
-<li><code>git add --all</code> 或者 <code>git add -A</code>（简写） 添加所有文件</li>
-<li><code>git add a.txt b.txt</code> 同时添加两个文件</li>
-<li><code>git add *.js</code> 添加当前目录下的所有js文件</li>
-</ul>
-<h3 id="提交更新"><a href="#提交更新" class="headerlink" title="提交更新"></a>提交更新</h3><ul>
-<li>作用：将文件由 暂存区 添加到 仓库（HEAD）</li>
-<li><code>git commit -m &quot;提交说明&quot;</code></li>
-</ul>
-<h3 id="查看文件状态"><a href="#查看文件状态" class="headerlink" title="查看文件状态"></a>查看文件状态</h3><ul>
-<li>命令：<code>git status</code></li>
-<li>命令：<code>git stauts -s</code> 简化日志输出格式</li>
-</ul>
-<h3 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h3><ul>
-<li>三个存储分区的说明：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1 工作区：开发者的工作目录</div><div class="line">2 暂存区：临时存放工作目录中变更的文件</div><div class="line">3 仓库  ：存储提交之后的文件目录</div></pre></td></tr></table></figure>
-<ul>
-<li>文件的三种状态：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">已修改（modified）=&gt; 已暂存（staged）=&gt; 已提交（committed）</div><div class="line"></div><div class="line">已修改表示修改了某个文件，但还没有提交保存</div><div class="line">已暂存表示把已修改的文件放在下次提交时要保存的清单中</div><div class="line">已提交表示该文件已经被安全地保存在本地git仓库中了</div></pre></td></tr></table></figure>
-<h3 id="Git工作流程"><a href="#Git工作流程" class="headerlink" title="Git工作流程"></a>Git工作流程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1 在工作目录中修改某些文件。</div><div class="line">2 对修改后的文件进行快照，然后保存到暂存区域。</div><div class="line">3 提交更新，将保存在暂存区域的文件快照永久转储到.git目录中。</div></pre></td></tr></table></figure>
-<h3 id="查看提交日志"><a href="#查看提交日志" class="headerlink" title="查看提交日志"></a>查看提交日志</h3><ul>
-<li>命令：<code>git log</code> 查看详细的提交信息</li>
-<li>命令：<code>git log --oneline</code> 简洁的日志信息</li>
-<li>命令：<code>git reflog</code> 查看所有提交变更操作</li>
-</ul>
-<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><ul>
-<li>作用：恢复到已经提交的某一个版本中</li>
-<li>命令：<code>git reset --hard [版本号]</code><ul>
-<li>作用：回退到指定的版本号</li>
-</ul>
-</li>
-<li>其他方式：<code>git reset --hard head~1</code><ul>
-<li>~1 表示回到上一次提交</li>
-<li>~2 表示上上一次提交</li>
-<li>~0 表示当前提交</li>
-</ul>
-</li>
-</ul>
-<h3 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h3><ul>
-<li>作用：忽略一些不需要被git管理的文件</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1 在与 .git 隐藏目录同级的目录中创建 `.gitignore` 文件</div><div class="line">2 打开 .gitignore 文件，加入忽略文件，例如：/test.html</div><div class="line">3 路径是相对于当前 .gitignore文件 的路径</div><div class="line"></div><div class="line">路径写法：</div><div class="line">/css/a.css</div><div class="line">/css/*.css</div><div class="line">/a.html</div><div class="line"></div><div class="line">#忽略 build/ 目录下的所有文件</div><div class="line">build/</div></pre></td></tr></table></figure>
-<h4 id="忽略文件的说明"><a href="#忽略文件的说明" class="headerlink" title="忽略文件的说明"></a>忽略文件的说明</h4><ul>
-<li>1 使用 <code>#</code> 表示注释，例如：<code># 这是注释内容</code></li>
-<li>2 使用 <code>*</code> 表示通配符，匹配所有文件，例如：<code>/css/*.css</code></li>
-</ul>
-
-          
+<li><p>使用 <code>--global</code> 实现全局配置，任何位置使用git都有效</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/10/文章标题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -704,18 +647,15 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/09/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

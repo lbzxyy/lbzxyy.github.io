@@ -62,7 +62,7 @@
     <link href="http://yoursite.com/2017/08/10/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"/>
     <id>http://yoursite.com/2017/08/10/文章标题/</id>
     <published>2017-08-09T18:44:31.000Z</published>
-    <updated>2017-08-09T18:47:08.779Z</updated>
+    <updated>2017-08-11T01:58:18.885Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Git-版本控制工具"><a href="#Git-版本控制工具" class="headerlink" title="Git -版本控制工具"></a>Git -版本控制工具</h1><h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><ul>
 <li><a href="https://git-scm.com" target="_blank" rel="external">官网</a></li>
@@ -101,10 +101,11 @@
 <li>配置用户名：   <code>git config --global user.name &quot;用户名&quot;</code></li>
 <li>配置邮箱：     <code>git config --global user.email &quot;邮箱地址&quot;</code></li>
 <li>查看配置信息： <code>git config --list</code></li>
-<li>使用 <code>--global</code> 实现全局配置，任何位置使用git都有效</li>
-</ul>
-<h3 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h3><ul>
-<li>命令：<code>git init</code></li>
+<li><p>使用 <code>--global</code> 实现全局配置，任何位置使用git都有效</p>
+<a id="more"></a>
+<h3 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h3></li>
+<li><p>命令：<code>git init</code></p>
+</li>
 <li>作用：使用Git管理项目的初始化操作，会创建一个名为<code>.git</code>的隐藏目录</li>
 <li>一般是在项目的根目录执行这个命令</li>
 <li><code>.git</code>目录:</li>
@@ -167,7 +168,44 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Git-版本控制工具&quot;&gt;&lt;a href=&quot;#Git-版本控制工具&quot; class=&quot;headerlink&quot; title=&quot;Git -版本控制工具&quot;&gt;&lt;/a&gt;Git -版本控制工具&lt;/h1&gt;&lt;h2 id=&quot;Git简介&quot;&gt;&lt;a href=&quot;#Git简介&quot; class=&quot;
+      &lt;h1 id=&quot;Git-版本控制工具&quot;&gt;&lt;a href=&quot;#Git-版本控制工具&quot; class=&quot;headerlink&quot; title=&quot;Git -版本控制工具&quot;&gt;&lt;/a&gt;Git -版本控制工具&lt;/h1&gt;&lt;h2 id=&quot;Git简介&quot;&gt;&lt;a href=&quot;#Git简介&quot; class=&quot;headerlink&quot; title=&quot;Git简介&quot;&gt;&lt;/a&gt;Git简介&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://git-scm.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;什么是Git&quot;&gt;&lt;a href=&quot;#什么是Git&quot; class=&quot;headerlink&quot; title=&quot;什么是Git&quot;&gt;&lt;/a&gt;什么是Git&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Git是一款免费、开源的分布式 &lt;code&gt;版本控制软件&lt;/code&gt; VCS - Version Control System&lt;/li&gt;
+&lt;li&gt;由 Linus Torvalds（林纳斯·托瓦兹）于2005年发布。&lt;/li&gt;
+&lt;li&gt;最初目的是为更好地管理 Linux内核 开发而设计&lt;/li&gt;
+&lt;li&gt;Git使用方式：1 命令 、2 图形化界面（GUI）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Git的优势&quot;&gt;&lt;a href=&quot;#Git的优势&quot; class=&quot;headerlink&quot; title=&quot;Git的优势&quot;&gt;&lt;/a&gt;Git的优势&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Git的速度快，性能好&lt;/li&gt;
+&lt;li&gt;有效、高速的处理从很小到非常大的项目版本管理&lt;/li&gt;
+&lt;li&gt;采用分布式存储方式，不需要服务器就可以运行&lt;/li&gt;
+&lt;li&gt;使得源代码的发布和交流极其方便&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;两种版本控制工具&quot;&gt;&lt;a href=&quot;#两种版本控制工具&quot; class=&quot;headerlink&quot; title=&quot;两种版本控制工具&quot;&gt;&lt;/a&gt;两种版本控制工具&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;集中式版本控制工具: SVN&lt;/li&gt;
+&lt;li&gt;分布式版本控制工具: Git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;版本控制&quot;&gt;&lt;a href=&quot;#版本控制&quot; class=&quot;headerlink&quot; title=&quot;版本控制&quot;&gt;&lt;/a&gt;版本控制&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;版本控制是一种记录一个或若干文件内容变化，以便将来查阅特&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;定版本修订情况的系统。&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;集中式和分布式的区别&quot;&gt;&lt;a href=&quot;#集中式和分布式的区别&quot; class=&quot;headerlink&quot; title=&quot;集中式和分布式的区别&quot;&gt;&lt;/a&gt;集中式和分布式的区别&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;1 集中式依赖于远程服务器，在没有网络的情况下无法提交&lt;/li&gt;
+&lt;li&gt;2 所有开发者都共享一个远程服务器&lt;/li&gt;
+&lt;li&gt;3 分布式直接进行本地存储，不依赖与远程服务器（可有可无）&lt;/li&gt;
+&lt;li&gt;4 没有网络的情况下，也可以工作，有网了，将本地修改内容全部提交到远程服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Git的安装&quot;&gt;&lt;a href=&quot;#Git的安装&quot; class=&quot;headerlink&quot; title=&quot;Git的安装&quot;&gt;&lt;/a&gt;Git的安装&lt;/h2&gt;&lt;h2 id=&quot;Git的基本使用&quot;&gt;&lt;a href=&quot;#Git的基本使用&quot; class=&quot;headerlink&quot; title=&quot;Git的基本使用&quot;&gt;&lt;/a&gt;Git的基本使用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;查看帮助：&lt;code&gt;git --help&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看某一命令帮助：&lt;code&gt;git add -h&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;基础配置&quot;&gt;&lt;a href=&quot;#基础配置&quot; class=&quot;headerlink&quot; title=&quot;基础配置&quot;&gt;&lt;/a&gt;基础配置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;需要配置：user.name 和 user.email&lt;/li&gt;
+&lt;li&gt;作用：每次 Git 提交时都会引用这两条信息，记录是谁提交了更新&lt;/li&gt;
+&lt;li&gt;配置用户名：   &lt;code&gt;git config --global user.name &amp;quot;用户名&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;配置邮箱：     &lt;code&gt;git config --global user.email &amp;quot;邮箱地址&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看配置信息： &lt;code&gt;git config --list&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用 &lt;code&gt;--global&lt;/code&gt; 实现全局配置，任何位置使用git都有效&lt;/p&gt;
     
     </summary>
     
@@ -179,10 +217,11 @@
     <link href="http://yoursite.com/2017/08/09/hello-world/"/>
     <id>http://yoursite.com/2017/08/09/hello-world/</id>
     <published>2017-08-09T15:32:52.246Z</published>
-    <updated>2017-08-09T15:32:52.247Z</updated>
+    <updated>2017-08-11T01:58:39.381Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
@@ -194,7 +233,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
